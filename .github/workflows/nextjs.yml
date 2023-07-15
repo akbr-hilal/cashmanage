@@ -1,4 +1,5 @@
 name: Build, Export and Publish Next.js App
+theme: minima
 on:
   push:
     branches:
