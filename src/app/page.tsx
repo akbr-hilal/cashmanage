@@ -15,11 +15,11 @@ export default function Home() {
       <Navbar />
       <div className=' h-screen mx-auto p-2 flex justify-center items-center'>
         <div>
-          <h1 className='mb-10 text-center fw-normal' style={{ fontSize: '68px' }}>
+          <h1 className='mb-10 text-center fw-normal text-3xl lg:text-6xl'>
             <span className='text-[#57CC99]'>Simple way</span> <br />
             <span className='text-[#22577A]'>to manage</span> <span className='text-[#57CC99]'>personal finance</span>
           </h1>
-          <div className='grid gap-4 grid-cols-4'>
+          <div className='grid gap-4 grid-cols-2 lg:grid-cols-4'>
             {ListCardJumbotron.map((item) => (
               <>
                 <CardJumbotron id={item.id} img={item.img} title={item.title} />
@@ -29,9 +29,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='container px-40 h-screen flex mx-auto p-2 items-center justify-center'>
+      <div className='container px-5 lg:px-40 h-screen flex mx-auto p-2 items-center justify-center'>
         <div>
-          <div className='grid gap-2 grid-cols-2 justify-start items-center mb-3'>
+          <div className='grid gap-2 grid-cols-2 justify-start items-center mb-8 lg:mb-4'>
             <div className='flex justify-start'>
               <Image src={Example1} alt="Example1" className='rounded-lg' />
             </div>
@@ -53,10 +53,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='h-screen flex justify-center items-center mx-auto px-40'>
+      <div className='h-screen flex justify-center items-center mx-auto px-5 lg:px-40'>
         <div>
           <h1 className='text-center text-4xl text-[#22577A]'>See what others have to say</h1>
-          <div className='mt-5 grid gap-2 grid-cols-3'>
+          <div className='mt-5 grid gap-2 grid-cols-2 lg:grid-cols-3'>
             {ListCardReview.map((item) => (
               <>
                 <CardReview id={item.id} user={item.user} review={item.review} />
