@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <h1 className='mb-10 text-center fw-normal' style={{ fontSize: '68px' }}>
             <span className='text-[#57CC99]'>Simple way</span> <br />
-            <span className='text-[#22577]'>to manage</span> <span className='text-[#57CC99]'>personal finance</span>
+            <span className='text-[#22577A]'>to manage</span> <span className='text-[#57CC99]'>personal finance</span>
           </h1>
           <div className='grid gap-4 grid-cols-4'>
             {ListCardJumbotron.map((item) => (
