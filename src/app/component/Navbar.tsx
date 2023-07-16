@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className={shadow ? " fixed w-full h-16 shadow-xl z-[100] bg-[#ffffff]" : " fixed w-full h-16 z-[100] "}>
             <div className="flex w-full h-full flex-wrap items-center justify-between px-8 2xl:px-16">
                 <Link href="/">
-                    <p style={{ color: '#22577A' }}>CashManage</p>
+                    <p className="text-[#22577A] font-bold">CashManage</p>
                 </Link>
             </div>
         </div>
